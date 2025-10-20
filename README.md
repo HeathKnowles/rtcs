@@ -169,30 +169,6 @@ ENABLE_PERSISTENCE=true
 
 ---
 
-##  Conceptual Folder Structure
-
-```
-/plug-and-play-chat-server
-│
-├── cmd/
-│   └── server.go                # Entry point for starting the chat server
-│
-├── internal/
-│   ├── hub/                     # Client + Hub logic
-│   ├── redis/                   # Redis Pub/Sub integration
-│   ├── auth/                    # JWT validation utilities
-│   ├── storage/                 # PostgreSQL persistence logic
-│   ├── config/                  # Environment loader and setup
-│   └── logger/                  # Centralized structured logging
-│
-├── Dockerfile
-├── .env.example
-├── go.mod / go.sum
-└── README.md
-```
-
----
-
 ##  Plug & Play Integration Scenarios
 
 | Scenario                | How It Fits                                                                   |
